@@ -1,17 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="bar, bebidas, alcohol, alcoholicas, tienda">
+    <meta name="description" content="Bar virtual de ventas de bebidas alcoholicas">
+    <title>¡Coco loco! Tienda virtual de bebidas alcoholicas </title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <h1>JS Coderhouse</h1>
+
+<body class="body__js">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <a href="index.html"><img src="recursos/logo palmeras svg.png" alt="icono de pagina" height="36"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">¡COCO LOCO!</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+            <div class="header__video">
+                <video controls autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"
+                    preload="auto" id="miVideo">
+                    <source src="recursos/moscowmuleinstrumental.webm" type="video/webm">
+                </video>
+            </div>
+
+            <!--LA OPACIDAD DEL VIDEO SE TRASLADO A ESTE TEXTO-->
+            <div class="header__texto">
+                <p>¡COCO LOCO DRINKS!</p>
+                <h1>LOS MEJORES TRAGOS PARA TU FIESTA</h1>
+            </div>
+
+    </header>
+
+    <!--CARDS-->
+    <main class="scaled">
+        <section class="container-fluid d-flex text-center justify-content-center">
+            <article class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/fernet.jpg" class="card-img-top" alt="imagen de fernet" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Fernet</h5>
+                            <p class="card-text">Fernet 1 Lts + Coca 3 Lts</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/gancia.jpg" class="card-img-top" alt="imagen de gancia" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Gancia</h5>
+                            <p class="card-text">Gancia 1 Lts + Sprite 3 Lts</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/campari.jpg" class="card-img-top" alt="imagen de campari" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Campari</h5>
+                            <p class="card-text">Campari 1 Lts + Citric 3 Lts</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/ron.jpg" class="card-img-top" alt="imagen de ron" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Cuba Libre</h5>
+                            <p class="card-text">Ron 1 Lts + Coca 3 Lts</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="container-fluid d-flex justify-content-center">
+            <article class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/daiquiri.jpg" class="card-img-top" alt="imagen de daiquiri" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Daiquiri</h5>
+                            <p class="card-text">Ron 1 Lts + Pulpa Frambuesa</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/sky.jpg" class="card-img-top" alt="imagen de vodka" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Vodka</h5>
+                            <p class="card-text">Vodka SKY 1 Lts + 6 Speed</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/gintonic.jpg" class="card-img-top" alt="imagen de gin" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Gin</h5>
+                            <p class="card-text">Gin Bosque 1LT + Schweppes Tonic 2.25LT</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/champagne.jpg" class="card-img-top" alt="imagen de champagne" />
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Champagne</h5>
+                            <p class="card-text">Chandon Delice 750ml + 4 Speed</p>
+                            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
 
 
+    <!--FOOTER-->
+    <footer class="container text-center footer">
+        <div class="row">
+            <div class="col">
+                <h3>
+                    DE LA PAMPA AL MUNDO
+                </h3>
+
+                <h3>Nuestras redes</h3>
+                <a href="https://www.instagram.com/"><img class="logos" src="recursos/logo-instagram.svg"
+                        alt="logo instagram"></a>
+                <a href="https://www.twitter.com/"><img class="logos" src="recursos/logo-twitter.svg"
+                        alt="logo twitter"></a>
+                <a href="https://www.facebook.com/"><img class="logos" src="recursos/logo-facebook.svg"
+                        alt="logo facebook"></a>
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
