@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.body__js {
+    background-image: url(../recursos/palmeras.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    padding-bottom: 3rem;
+}
+
+.navbar .container-fluid {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.header__texto {
+    background-color: rgba(204, 47, 73, 0.445);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40pt;
+    text-align: center;
+    left: 27%;
+}
+
+
+
+.main {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.main__texto {
+    color: white;
+    font-size: 18pt;
+    margin-top: 3rem;
+    margin-left: 20rem;
+    max-width: 45vw;
+}
+
+.scale {
+    transform: scale(0.8);
+}
+
+.tarjeta {
+    background-color: white;
+    border-style: groove;
+    border-color: white;
+}
+
+.btn__vaciar {
+    margin: 1rem;
+}
+
+
+
+/*-----------CARRITO-----------*/
+.compra__carrito {
+    background-color: rgba(255, 255, 255, 0.534);
+    color: #141414;
+    font-size: 12pt;
+    height: auto;
+    width: 50vw;
+    margin-left: 18rem;
+    border-radius: 2rem;
+}
+
+.interior__carrito {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.letras__carrito {
+    font-size: 18pt;
+}
+
+
+/*-----------FORMULARIO-----------*/
+.form {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.158);
+    border-style: groove;
+    color: white;
+    font-size: 18pt;
+    max-width: 50vw;
+    margin-left: 18rem;
+}
+
+.delivery {
+    font-size: 18pt;
+    color: black;
+    background-color: #ffc107;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin: 1rem;
+    margin-left: 12rem;
+    width: 18vw;
+}
+
+.izquierda {
+    text-align: right;
+}
+
+.validado {
+    border: solid blue;
+}
+
+.obligatorio {
+    border: solid red;
+}
+
+.msjObligatorio {
+    color: red;
+    background-color: #141414;
+    text-align: center;
+    font-size: 18pt;
+}
+
+
+
+
+
+/*-----------FOOTER-----------*/
+.footer {
+    color: white;
+}
+
+.logos {
+    width: 2vw;
+}

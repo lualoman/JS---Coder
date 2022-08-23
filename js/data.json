@@ -1,0 +1,44 @@
+[{
+    "id": 1,
+    "nombre": "Combo Daiquiri",
+    "descripcion": "Ron 1 Lts + Pulpa Frambuesa",
+    "precio": 1410,
+    "cantidad": 1,
+    "imagen": "recursos/daiquiri.jpeg"
+}, {
+    "id": 2,
+    "nombre": "Combo Gin",
+    "descripcion": "Gin Bosque 1LT + Schweppes Tonic 2.25LT",
+    "precio": 2160,
+    "cantidad": 1,
+    "imagen": "recursos/gintonic.jpeg"
+}, {
+    "id": 3,
+    "nombre": "Combo Ron",
+    "descripcion": "Ron 1 Lts + Coca 3 Lts",
+    "precio": 1440,
+    "cantidad": 1,
+    "imagen": "recursos/ron.jpeg"
+}, {
+    "id": 4,
+    "nombre": "Combo Campari",
+    "descripcion": "Campari 1 Lts + Citric 3 Lts",
+    "precio": 1650,
+    "cantidad": 1,
+    "imagen": "recursos/campari.jpeg"
+}, {
+    "id": 5,
+    "nombre": "Combo Vodka",
+    "descripcion": "Vodka SKY 1 Lts + 6 Speed",
+    "precio": 1750,
+    "cantidad": 1,
+    "imagen": "recursos/sky.jpeg"
+}, {
+    "id": 6,
+    "nombre": "Combo Fernet",
+    "descripcion": "Fernet 1 Lts + Coca 3 Lts",
+    "precio": 1880,
+    "cantidad": 1,
+    "imagen": "recursos/fernet.jpeg"
+}
+]
