@@ -13,9 +13,6 @@ const contenedor = document.getElementById("contenedor"),
 
 
 //PEDIR CONFIRMACION DE EDAD
-
-//Con estás dos líneas se revisa PRIMERO el storage, y sólo si no tiene el booleano de esMayor se confirma que sea mayor de edad. Si no, directamente se muestra la página.
-
 const edadGuardada = JSON.parse(localStorage.getItem("esMayor"));
 edadGuardada ? mostrarPagina() : confirmarUsuarioMayor();
 
@@ -23,36 +20,36 @@ edadGuardada ? mostrarPagina() : confirmarUsuarioMayor();
 function confirmarUsuarioMayor() {
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
-            confirmButton: 'btn btn-success',
-            cancelButton: 'btn btn-danger'
+            confirmButton: "btn btn-success",
+            cancelButton: "btn btn-danger"
         },
         buttonsStyling: false
     })
 
     swalWithBootstrapButtons.fire({
-        title: '¿Eres mayor de 18 años?',
+        title: "¿Eres mayor de 18 años?",
         text: "El pedido no se entregará a menores de edad",
         color: "white",
-        icon: 'warning',
+        icon: "warning",
         background: "#141414",
-        confirmButtonText: 'Si, soy mayor',
-        cancelButtonText: 'Cancelar',
+        confirmButtonText: "Si, soy mayor",
+        cancelButtonText: "Cancelar",
         showCancelButton: true,
         reverseButtons: true
     }).then((result) => {
         if (result.isConfirmed) {
             guardarEdad(localStorage);
             swalWithBootstrapButtons.fire(
-                '¡Confirmado!',
-                'Solicitaremos tu DNI al momento de la entrega',
-                'success'
+                "¡Confirmado!",
+                "Solicitaremos tu DNI al momento de la entrega",
+                "success"
             );
             mostrarPagina();
         } else if (result.dismiss === Swal.DismissReason.cancel) {
             swalWithBootstrapButtons.fire(
-                'Cancelado',
-                'Regresa cuando seas mayor de edad :)',
-                'error'
+                "Cancelado",
+                "Regresa cuando seas mayor de edad :)",
+                "error"
             );
         }
     })
@@ -60,11 +57,8 @@ function confirmarUsuarioMayor() {
 
 function guardarEdad(storage) {
     storage.setItem("esMayor", JSON.stringify(true));
-    //Si usás un parámetro, no hace falta que hagas el if, porque se va a guardar en el storage correspondiente
 }
 
-//---------------------------------------------------------
-//---------------------------------------------------------
 function buscarProducto(array, idProducto) {
     return array.find(item => item.id == idProducto);
 }
@@ -77,8 +71,7 @@ function obtenerIDdeBoton(cadena, nombre) {
 //CREACION DE TARJETAS
 function mostrarPagina() {
 
-    //Acá hacemos el fetch, y creamos las tarjetas con la info traída desde el json
-    fetch("data.json")
+    fetch("https://raw.githubusercontent.com/lualoman/JS-Alomar/main/js/data.json")
         .then((response) => response.json())
         .then((data) => {
             data.forEach(combo => {
@@ -96,8 +89,7 @@ function mostrarPagina() {
                     </div>
                 </div>
             </div>
-        </div>`
-                    ;
+        </div>`;
 
                 contenedor.innerHTML += tarjeta;
                 let btnsComprar = document.querySelectorAll(".btn__comprar");
@@ -115,7 +107,6 @@ function mostrarPagina() {
                 })
             })
         })
-
 }
 
 //CREACION DE CARRITO y APLICACION DE BTN ELIMINAR
@@ -137,10 +128,10 @@ const renderizarCarrito = () => {
     })
 
 
-    let btnsEliminar = document.querySelectorAll('.btn__eliminar');
+    let btnsEliminar = document.querySelectorAll(".btn__eliminar");
     btnsEliminar.forEach(btn => {
-        btn.addEventListener('click', () => {
-            let id = obtenerIDdeBoton(btn.id, 'eliminarItem');
+        btn.addEventListener("click", () => {
+            let id = obtenerIDdeBoton(btn.id, "eliminarItem");
             let producto = buscarProducto(carrito, id);
             const indice = carrito.indexOf(producto);
             carrito.splice(indice, 1);
@@ -170,15 +161,13 @@ vaciarCarrito.addEventListener("click", () => {
     limpiarCarrito();
 })
 
-
-
 btnDelivery.addEventListener("click", () => {
     window.scrollTo({ top: 1500, behavior: "smooth" });
 })
 
 
 
-//---------------------------------------------------------------ENVIO DE FORMULARIO
+//ENVIO DE FORMULARIO
 envioForm()
 function envioForm() {
     document.addEventListener("DOMContentLoaded", fnzDisabled)
